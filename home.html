@@ -1,39 +1,41 @@
 <html>
-    <head>
-        <title>Vibes Inn</title>
-        <link rel="stylesheet" href="css/style.css">
 
-        <!--FONTS-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+<head>
+    <title>Vibes Inn</title>
+    <link rel="stylesheet" href="css/style.css">
 
-    </head>
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
 
-    <header>
-        <!-- <h1><i>Hotel Vibes Inn</i></h1> -->
-        <div class="logo">
-            <img src="Gallery/logo2.jpg" alt="logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Rooms</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Contact us</a></li>
-                <!-- <li><a class="btn-booknow" href="#">BOOK NOW</a></li> -->
-                <button class="btn-booknow">BOOK NOW</button>
-                
-            </ul>
-        </nav>
-    </header>
-    <body>
-        <!-- <img src="Gallery/room.jpg"> -->
-           
-        <!--=====================SLIDESHOW===========================-->
-       
-       <section class="section-banner">
+</head>
+
+<header>
+    <!-- <h1><i>Hotel Vibes Inn</i></h1> -->
+    <div class="logo">
+        <img src="Gallery/logo2.jpg" alt="logo">
+    </div>
+    <nav>
+        <ul class="tabs">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Rooms</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact us</a></li>
+            <!-- <li><a class="btn-booknow" href="#">BOOK NOW</a></li> -->
+            <button class="btn-booknow">BOOK NOW</button>
+
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <!-- <img src="Gallery/room.jpg"> -->
+
+    <!--=====================SLIDESHOW===========================-->
+
+    <section class="section-banner">
         <div class="slide-display-container">
             <img class="myslides" src="Gallery/room1.jpg">
             <img class="myslides" src="Gallery/room2.jpg">
@@ -43,7 +45,33 @@
             <button class="btn-display-left" onclick="plusDivs(-1)">&#10094;</button>
             <button class="btn-display-right" onclick="plusDivs(+1)">&#10095;</button>
         </div>
-        </section>       
+    </section>
     <script src="js/script.js"></script>
-    </body>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h2>Hotel Vibes Inn</h2>
+                    <ul>
+                        <li><a href="#">Email</a></li>
+                        <li><a href="#">Phone Number</a></li>
+                        <li><a href="#">Address</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Rooms</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+</body>
+
 </html>
