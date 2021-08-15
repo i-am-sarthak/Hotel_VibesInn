@@ -34,31 +34,7 @@
             <button class="btn-display-left" onclick="plusDivs(-1)">&#10094;</button>
             <button class="btn-display-right" onclick="plusDivs(+1)">&#10095;</button>
         </div>
-        </section>
-        <script>
-            var slideIndex=1;
-            showDivs(slideIndex);
-
-            function plusDivs(n)
-            {
-                showDivs(slideIndex+=n);
-            }
-            function showDivs(n)
-            {
-                var i;
-                var x=document.getElementsByClassName("myslides");
-                if(n>x.length) {slideIndex=1}
-                if(n<1){slideIndex=x.length}
-                for(i=0;i<x.length;i++)
-                {
-                    x[i].style.display="none";
-                }
-                // slideIndex++
-                // if(slideIndex > x.length){slideIndex=1}
-                x[slideIndex-1].style.display="block";
-                //setTimeout(showDivs,2000);
-            }
-        </script>
-
+        </section>       
+    <script src="js/script.js"></script>
     </body>
 </html>
