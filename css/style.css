@@ -14,14 +14,11 @@ h1{
     margin-top: 10px;
 }
 ul{
-    background-color: lightslategrey;
+    float: left;
+    background-color:white;
     text-align:center;
     width: auto;
-    /* margin-left: 15%; */
     margin-top: 8px;
-    padding-right:25%;
-    padding-top: 0.5%;
-    padding-bottom: 0.5%;  
 }
 li{
     display: inline-block;
@@ -29,9 +26,10 @@ li{
 }
 a{
     text-align:center;
-    color:aqua;
+    color: ae0000;
     text-decoration: none;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    font-family: 'PT Mono', monospace;
     font-size: 1.2vw;
 
 }
