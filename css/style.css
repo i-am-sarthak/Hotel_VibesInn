@@ -57,3 +57,12 @@ a{
     top: 50%;
     right: 1%;
 }
+
+.btn-booknow{
+    padding: 15px 25px;
+    text-align: center;
+    cursor: pointer;
+    color:red;
+    background-color: yellow;
+
+}
