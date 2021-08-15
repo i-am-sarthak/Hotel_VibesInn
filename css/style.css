@@ -13,6 +13,9 @@ h1{
     margin-left: 2%;
     margin-top: 10px;
 }
+
+/*--============ Nav Bar Styling Code ============--*/
+
 .tabs{
     float: left;
     background-color:white;
@@ -65,6 +68,8 @@ h1{
     background-color: yellow;
 
 }
+
+/*--============ Footer Styling Code ============--*/
 
 .footer{
 	background-color: #24262b;
