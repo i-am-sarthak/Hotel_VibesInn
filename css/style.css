@@ -68,7 +68,7 @@ h1{
 }
 
 .footer{
-	background-color: #24262b;
+	background-color:white;
     padding: 70px 0;
 }
 .footer-col{
@@ -85,12 +85,17 @@ h1{
 
 .footer-col h2{
 	font-size: 18px;
-	color: #ffffff;
+	color:#ae0000;
 	text-transform: capitalize;
 	margin-bottom: 35px;
 	font-weight: 500;
 	position:relative;
 	text-align:center;
+}
+
+.footer-col p{
+    text-align: center;
+    font-weight: 250;
 }
 
 .footer-col ul{
@@ -99,7 +104,7 @@ h1{
 }
 
 .footer-col ul li a{
-	color:#ffffff;
+	color:black;
 	text-align:center;
     text-decoration: none;
     /* font-family: Georgia, 'Times New Roman', Times, serif; */
@@ -107,7 +112,7 @@ h1{
     font-size: 1vw;
 	text-transform: capitalize;
 	font-weight: 300;
-	color: #bbbbbb;
+	color: black;
 	display: block;
 	transition: all 0.3s ease;
     padding: 5px 10px;
