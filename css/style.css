@@ -163,11 +163,29 @@ h1{
 
   /*responsive*/
 @media(max-width: 767px){
+
+    .row{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
     .footer-col{
       width: 100%;
       margin-bottom: 30px;
   }
+
+  .footer-logo img{
+      display: none;
   }
+
+  .footer-col #xxx{
+    display: block;
+    width: 10vw;
+    height: 7vw;
+    margin: auto;
+}
+    }  
   @media(max-width: 574px){
     .footer-col{
       width: 100%;
@@ -196,4 +214,12 @@ h1{
 .row3{
     display: flex;
     font-family:Arial, Helvetica, sans-serif;
+}
+.row3 p{
+    color:grey;
+}
+
+
+.footer-col #xxx{
+    display: none;
 }
