@@ -179,7 +179,7 @@ h1{
       display: none;
   }
 
-  .footer-col .footer-logo-flex #xxx{
+  .footer-col .footer-logo-flex #vertical-logo{
     display: block;
     width: 132px;
     height: 100px;
@@ -220,6 +220,6 @@ h1{
 }
 
 
-.footer-col #xxx{
+.footer-col #vertical-logo{
     display: none;
 }
