@@ -179,15 +179,18 @@ h1{
     margin: 10px 5px 0;
     text-decoration: none;
     }
-  .fa-facebook {
+    .social-links{
+    text-align: center;
+    }   
+    .fa-facebook {
     color:#3b5998;
-  }
-  .fa-instagram{
+    }
+    .fa-instagram{
       color: #8a3ab9;
-  }
-  .fa-pinterest{
+    }
+    .fa-pinterest{
     color: red;
-}
+    }
 
 /*Copyrights*/
 .row3{
