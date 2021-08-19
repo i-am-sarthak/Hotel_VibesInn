@@ -31,7 +31,7 @@ h1{
     text-decoration: none;
     /* font-family: Georgia, 'Times New Roman', Times, serif; */
     /* font-family: 'PT Mono', monospace; */
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'Apercu Regular',Tahoma,sans-serif;
     font-size: 18px;
 }
 
@@ -67,6 +67,32 @@ h1{
     background-color: yellow;
 
 }
+/*--============ About Us ============--*/
+
+.about-us{
+    padding: 70px 0;
+}
+
+.about-us div h2{
+    font-size: 2rem;
+    letter-spacing: .3125rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.about-us div p{
+    font-family:'Apercu Regular',Tahoma,sans-serif;
+    font-size: .9375rem;
+    text-align: center;
+    justify-content: center;
+    color: #262626;
+    margin: 0 200px;
+    line-height: 1.66;
+}
+
+/*--============ Footer ============--*/
 
 .footer{
 	background-color:#f3f3f2;
@@ -88,7 +114,7 @@ h1{
 }
 
 .footer-col h2{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'Apercu Regular',Tahoma,sans-serif;
 	font-size: 18px;
 	color:#ae0000;
 	text-transform: capitalize;
@@ -101,6 +127,7 @@ h1{
 .footer-col p{
     text-align: center;
     font-weight: 250;
+    font-family: 'Apercu Regular',Tahoma,sans-serif;
 }
 
 .footer-col ul{
@@ -113,8 +140,9 @@ h1{
 	text-align:center;
     text-decoration: none;
     /* font-family: Georgia, 'Times New Roman', Times, serif; */
-    font-family:Arial, Helvetica, sans-serif;
+    /* font-family:Arial, Helvetica, sans-serif; */
     /* font-size: 1vw; */
+    font-family: 'Apercu Regular',Tahoma,sans-serif;
 	text-transform: capitalize;
 	font-weight: 300;
 	color: black;
@@ -151,7 +179,7 @@ h1{
   .row2 li {
     float:left;
     padding: 15px 20px; 
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'Apercu Regular',Tahoma,sans-serif;
   }
   
   .row2 li a {
@@ -213,7 +241,7 @@ h1{
 /*Copyrights*/
 .row3{
     display: flex;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'Apercu Regular',Tahoma,sans-serif;
 }
 .row3 p{
     color:grey;
