@@ -116,7 +116,8 @@ h1{
 
 /*Rooms Section*/
 .section-rooms{
-    background:ghostwhite;
+    background:#efefef;
+    padding: 5% 10% 5% 10%;
 }
 
 @media (min-width: 992px){
@@ -133,6 +134,7 @@ h1{
 }
 
 .card-wrapper{
+    width: 75%;
     padding: 0 25px;
 }
 
@@ -143,12 +145,50 @@ h1{
 }
 
 .card-box{
+    background:white;
     padding: 2rem;
 }
 
 .card-box h2{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Gilda Display', serif;
+    font-size: 1.9rem;
+    font-weight: 400;
     margin: 0px 0px 8px;
+}
+
+.card-info-icons{
+    padding-bottom: 0.5rem;
+}
+.card-info-icons-wrapper{
+    display: inline-flex;
+    align-items: center;
+    padding-right: .5rem;
+    font-size: 20px;
+}
+.card-info-icons-wrapper .mbr-iconfont {
+    padding-right: .5rem;
+    font-size: 20px;
+}
+.card-info-icons-wrapper .card-icon-text{
+    display: inline-block;
+    padding-right: 1rem;
+    margin: 0;
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.75rem;
+}
+.card-box p{
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+}
+.btn-explore{
+    text-align: center;
+    cursor: pointer;
+    padding: 5px 30px 5px 30px;
+    color:white;
+    background-color: black;
 }
 
 @media(max-width: 1200px){
@@ -182,6 +222,36 @@ h1{
         line-height: 1.2;
     }
 }
+
+/* Rooms Column 2 */
+.card-column-media{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: stretch;
+    justify-content: flex-start;
+    padding: 0;
+}
+.media-first-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.first-row-first-child{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column; 
+}
+@media (min-width: 992px){}
+.card-column-media {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
 
 /*--============ Footer ============--*/
 
