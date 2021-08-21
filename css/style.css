@@ -225,7 +225,7 @@ h1{
 
 /* Rooms Column 2 */
 .card-column-media{
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
@@ -236,8 +236,11 @@ h1{
 .media-first-row{
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    height: 50%;
+    margin: 0;
 }
-.first-row-first-child{
+/* .first-row-first-child{
     position: relative;
     width: 100%;
     min-height: 1px;
@@ -245,12 +248,50 @@ h1{
     padding-left: 15px;
     display: flex;
     flex-direction: column; 
-}
+} */
+
+
 @media (min-width: 992px){}
 .card-column-media {
     flex: 0 0 50%;
     max-width: 50%;
 }
+@media (min-width: 768px){
+.first-row-first-child {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+
+
+/* =====Facilities===== */
+.custom-feature{
+    display: inline-flex;
+    align-items: center;
+    padding-right: .5rem;
+    font-size: 20px;
+}
+.fac-inner-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 125px;
+    position: relative;
+}
+
+.fac-title-text{
+    margin: 0;
+    color: #000000;
+    font-weight: 700;
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+}
+
+.custom-feature p{
+    display: inline-block;
+}
+
 
 
 /*--============ Footer ============--*/
@@ -409,4 +450,5 @@ h1{
 
 .footer-col #vertical-logo{
     display: none;
+}
 }
