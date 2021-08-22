@@ -287,11 +287,10 @@ h1{
     align-items: center;
     display: flex;
 }
-
-.custom-feature p{
-    display: inline-block;
+.fac-icon-text{
+    padding: 1.5rem;
+    align-items: center;
 }
-
 
 
 /*--============ Footer ============--*/
