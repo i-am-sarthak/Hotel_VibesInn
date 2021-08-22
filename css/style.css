@@ -67,6 +67,11 @@ h1{
     background-color: yellow;
 
 }
+
+
+/* ============= SlideShow ============ */
+
+
 /*--============ About Us ============--*/
 
 .about-us{
@@ -114,10 +119,14 @@ h1{
     height: 500px;
 } */
 
-/*Rooms Section*/
+/*====== Rooms Section =======*/
 .section-rooms{
     background:#efefef;
-    padding: 5% 10% 5% 10%;
+    padding: 1% 10% 5% 10%;
+}
+
+.container-rooms-row{
+    display: flex;
 }
 
 @media (min-width: 992px){
@@ -225,7 +234,7 @@ h1{
 
 /* Rooms Column 2 */
 .card-column-media{
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
@@ -249,7 +258,10 @@ h1{
     display: flex;
     flex-direction: column; 
 } */
-
+.first-row-first-child, .first-row-second-child{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 @media (min-width: 992px){}
 .card-column-media {
@@ -264,7 +276,7 @@ h1{
 
 
 
-/* =====Facilities===== */
+/* ===== Facilities ===== */
 .custom-feature{
     display: inline-flex;
     align-items: center;
