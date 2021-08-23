@@ -1,84 +1,89 @@
-html{
+html {
     margin: 0;
     padding: 0;
 }
-header{
+
+header {
     width: 100%;
     height: 70px;
 }
-h1{
+
+h1 {
     position: absolute;
     padding: 3px;
     float: left;
     margin-left: 2%;
     margin-top: 10px;
 }
-/*--============ Nav Bar Styling Code ============--*/
-.tabs{
+
+/*--========================= Nav Bar Styling Code =========================--*/
+
+.tabs {
     float: left;
-    background-color:white;
-    text-align:center;
+    background-color: white;
+    text-align: center;
     width: auto;
     margin-top: 8px;
 }
-.tabs li{
+
+.tabs li {
     display: inline-block;
     padding: 15px 30px;
 }
-.tabs li a{
-    text-align:center;
+
+.tabs li a {
+    text-align: center;
     color: #ae0000;
     text-decoration: none;
     /* font-family: Georgia, 'Times New Roman', Times, serif; */
     /* font-family: 'PT Mono', monospace; */
-    font-family:'Apercu Regular',Tahoma,sans-serif;
+    font-family: 'Apercu Regular', Tahoma, sans-serif;
     font-size: 18px;
 }
 
-.logo img{
+.logo img {
     float: left;
     margin-left: 15%;
     width: 7vw;
     height: 4.5vw;
 }
 
-.myslides{
+/*--========================= SlideShow =========================--*/
+
+.myslides {
     display: none;
     width: 100%;
 }
-.btn-display-left{
+
+.btn-display-left {
     font-size: 3vw;
     position: absolute;
     top: 50%;
     left: 1%;
 }
-.btn-display-right{
+
+.btn-display-right {
     font-size: 3vw;
     position: absolute;
     top: 50%;
     right: 1%;
 }
 
-.btn-booknow{
+.btn-booknow {
     padding: 15px 25px;
     text-align: center;
     cursor: pointer;
-    color:red;
+    color: red;
     background-color: yellow;
-
 }
 
+/*--========================= About Us =========================--*/
 
-/* ============= SlideShow ============ */
-
-
-/*--============ About Us ============--*/
-
-.about-us{
+.about-us {
     padding: 70px 0;
 }
 
-.about-us div h2,.rooms-title h2{
+.about-us div h2, .rooms-title h2 {
     font-size: 2rem;
     letter-spacing: .3125rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -87,8 +92,8 @@ h1{
     text-align: center;
 }
 
-.about-us div p{
-    font-family:'Apercu Regular',Tahoma,sans-serif;
+.about-us div p {
+    font-family: 'Apercu Regular', Tahoma, sans-serif;
     font-size: .9375rem;
     text-align: center;
     justify-content: center;
@@ -97,18 +102,18 @@ h1{
     line-height: 1.66;
 }
 
-.about-us div img{
+.about-us div img {
     /* text-align: center;
     justify-content: center;
     margin: 0 300px;
     width: 800px;
     height: 400px; */
-
-    display:block;
+    display: block;
     width: 75%;
     margin-left: auto;
     margin-right: auto;
- }
+}
+
 /* .section-mid-img{
     display: flex;
     justify-content: center;
@@ -119,22 +124,24 @@ h1{
     height: 500px;
 } */
 
-/*====== Rooms Section =======*/
-.section-rooms{
-    background:#efefef;
+/*--========================= Rooms Section Card =========================--*/
+
+.section-rooms {
+    background: #efefef;
     padding: 1% 10% 5% 10%;
 }
 
-.container-rooms-row{
+.container-rooms-row {
     display: flex;
 }
 
-@media (min-width: 992px){
-    .card-column{
+@media (min-width: 992px) {
+    .card-column {
         max-width: 50%;
     }
 }
-.card-img{
+
+.card-img {
     overflow: hidden;
 }
 
@@ -142,43 +149,46 @@ h1{
     transform: scale(1.1);
 }
 
-.card-wrapper{
+.card-wrapper {
     width: 75%;
     padding: 0 25px;
 }
 
-.card-wrapper .card-img img{
+.card-wrapper .card-img img {
     width: 100%;
     transition: all .5s;
     /* height: 300px; */
 }
 
-.card-box{
-    background:white;
+.card-box {
+    background: white;
     padding: 2rem;
 }
 
-.card-box h2{
+.card-box h2 {
     font-family: 'Gilda Display', serif;
     font-size: 1.9rem;
     font-weight: 400;
     margin: 0px 0px 8px;
 }
 
-.card-info-icons{
+.card-info-icons {
     padding-bottom: 0.5rem;
 }
-.card-info-icons-wrapper{
+
+.card-info-icons-wrapper {
     display: inline-flex;
     align-items: center;
     padding-right: .5rem;
     font-size: 20px;
 }
+
 .card-info-icons-wrapper .mbr-iconfont {
     padding-right: .5rem;
     font-size: 20px;
 }
-.card-info-icons-wrapper .card-icon-text{
+
+.card-info-icons-wrapper .card-icon-text {
     display: inline-block;
     padding-right: 1rem;
     margin: 0;
@@ -187,68 +197,77 @@ h1{
     font-family: 'Roboto', sans-serif;
     font-size: 0.75rem;
 }
-.card-box p{
+
+.card-box p {
     font-weight: 100;
     font-family: 'Roboto', sans-serif;
     font-size: 0.9rem;
 }
-.btn-explore{
+
+.btn-explore {
     text-align: center;
     cursor: pointer;
     padding: 5px 30px 5px 30px;
-    color:white;
+    color: white;
     background-color: black;
 }
 
-@media(max-width: 1200px){
-    .about-us div p{
+/*--========================= Responsive Card =========================--*/
+
+@media(max-width: 1200px) {
+    .about-us div p {
         font-size: .9rem;
         margin: 0 100px 20px 100px;
         line-height: 1.66;
     }
 }
 
-@media(max-width: 767px){
-    .about-us div h2,.rooms-title h2{
+@media(max-width: 767px) {
+    .about-us div h2, .rooms-title h2 {
         font-size: 1.5rem;
         letter-spacing: .1rem;
     }
-    .about-us div p{
+    .about-us div p {
         font-size: .9rem;
         margin: 0 20px 20px 20px;
         line-height: 1.66;
     }
 }
-@media(max-width: 574px){
-    .about-us div h2,.rooms-title h2{
+
+@media(max-width: 574px) {
+    .about-us div h2, .rooms-title h2 {
         font-weight: bold;
         font-size: 1rem;
     }
-    .about-us div p{
+    .about-us div p {
         letter-spacing: .1rem;
         font-size: .9rem;
         margin: 20px 10px 20px 10px;
         line-height: 1.2;
     }
+    .first-row-first-child {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
 }
 
-/* Rooms Column 2 */
-.card-column-media{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+/*--========================= Rooms Column 2 =========================--*/
+
+.card-column-media {
+    
     align-content: center;
     align-items: stretch;
     justify-content: flex-start;
     padding: 0;
 }
-.media-first-row{
-    display: flex;
-    flex-wrap: wrap;
+
+.media-first-row {
     width: 100%;
     height: 50%;
     margin: 0;
 }
+
 /* .first-row-first-child{
     position: relative;
     width: 100%;
@@ -258,124 +277,137 @@ h1{
     display: flex;
     flex-direction: column; 
 } */
-.first-row-first-child, .first-row-second-child{
-    display: flex;
-    flex-wrap: wrap;
-}
 
-@media (min-width: 992px){}
-.card-column-media {
-    flex: 0 0 50%;
-    max-width: 50%;
-}
-@media (min-width: 768px){
-.first-row-first-child {
-    flex: 0 0 50%;
-    max-width: 50%;
-}
-
-
-
-/* ===== Facilities ===== */
-.custom-feature{
-    display: inline-flex;
-    align-items: center;
-    padding-right: .5rem;
-    font-size: 20px;
-}
-.fac-inner-wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    height: 125px;
-    position: relative;
-}
-
-.fac-title-text{
-    margin: 0;
-    color: #000000;
-    font-weight: 700;
-    font-size: 20px;
-    align-items: center;
+.first-row-first-child .card-wrapper, .first-row-second-child .card-wrapper{
     display: flex;
 }
-.fac-icon-text{
-    padding: 1.5rem;
-    align-items: center;
+
+@media (min-width: 992px) {}
+
+
+
+/*--========================= Facilities =========================--*/
+
+.fac-inner-wrapper {
+    display: flex;
 }
 
+@media(max-width: 767px) {}
 
-/*--============ Footer ============--*/
+@media(max-width: 574px) {
+    .fac-inner-wrapper {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .fac-inner-wrapper {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
 
-.footer{
-	background-color:#f3f3f2;
+/*--========================= Footer =========================--*/
+
+.footer {
+    background-color: #f3f3f2;
     padding: 70px 0;
 }
-.footer-col{
-	display:inline-table;
+
+.footer-col {
+    display: inline-table;
     width: 25%;
     padding: 0 15px;
 }
 
-.footer-col img{
+.footer-col img {
     display: block;
     width: 9vw;
     height: 7vw;
     margin: auto;
 }
 
-.footer-col h2{
-    font-family:'Apercu Regular',Tahoma,sans-serif;
-	font-size: 18px;
-	color:#ae0000;
-	text-transform: capitalize;
-	margin-bottom: 35px;
-	font-weight: 500;
-	position:relative;
-	text-align:center;
+.footer-col h2 {
+    font-family: 'Apercu Regular', Tahoma, sans-serif;
+    font-size: 18px;
+    color: #ae0000;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+    text-align: center;
 }
 
-.footer-col p{
+.footer-col p {
     text-align: center;
     font-weight: 250;
-    font-family: 'Apercu Regular',Tahoma,sans-serif;
+    font-family: 'Apercu Regular', Tahoma, sans-serif;
 }
 
-.footer-col ul{
-	list-style: none;
+.footer-col ul {
+    list-style: none;
     padding-inline-start: 0px;
 }
 
-.footer-col ul li a{
-	color:black;
-	text-align:center;
+.footer-col ul li a {
+    color: black;
+    text-align: center;
     text-decoration: none;
     /* font-family: Georgia, 'Times New Roman', Times, serif; */
     /* font-family:Arial, Helvetica, sans-serif; */
     /* font-size: 1vw; */
-    font-family: 'Apercu Regular',Tahoma,sans-serif;
-	text-transform: capitalize;
-	font-weight: 300;
-	color: black;
-	display: block;
-	transition: all 0.3s ease;
+    font-family: 'Apercu Regular', Tahoma, sans-serif;
+    text-transform: capitalize;
+    font-weight: 300;
+    color: black;
+    display: block;
+    transition: all 0.3s ease;
     padding: 15px 10px;
 }
-.footer-col ul li a:hover{
-	color: #ffffff;
-	padding-left: 8px;
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
 }
 
-.row{
+.row {
     display: flex;
     justify-content: center;
 }
 
+/*--========================= Responsive Footer =========================--*/
 
-/*Quick Links*/
-.row2{
+@media(max-width: 767px) {
+    .row {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .footer-col {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .footer-logo img {
+        display: none;
+    }
+    .footer-col .footer-logo-flex #vertical-logo {
+        display: block;
+        width: 132px;
+        height: 100px;
+        margin: auto;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}
+
+/*--========================= Quick Links =========================--*/
+
+.row2 {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     /* margin-top: 20px; */
     /* padding-left: 90px; */
 }
@@ -385,81 +417,55 @@ h1{
     margin: 0;
     padding: 0;
     overflow: hidden;
-  }
-  
-  .row2 li {
-    float:left;
-    padding: 15px 20px; 
-    font-family:'Apercu Regular',Tahoma,sans-serif;
-  }
-  
-  .row2 li a {
+}
+
+.row2 li {
+    float: left;
+    padding: 15px 20px;
+    font-family: 'Apercu Regular', Tahoma, sans-serif;
+}
+
+.row2 li a {
     display: block;
-    color:black;
+    color: black;
     padding: 16px;
     text-decoration: none;
-  }
-
-  /*responsive*/
-@media(max-width: 767px){
-
-    .row{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .footer-col{
-      width: 100%;
-      margin-bottom: 30px;
-  }
-
-  .footer-logo img{
-      display: none;
-  }
-
-  .footer-col .footer-logo-flex #vertical-logo{
-    display: block;
-    width: 132px;
-    height: 100px;
-    margin: auto;
 }
-    }  
-  @media(max-width: 574px){
-    .footer-col{
-      width: 100%;
-  }
-  }
 
-  /*footer social media icons*/
-  .social-list__link{
+/*--========================= footer social media icons =========================--*/
+
+.social-list__link {
     margin: 10px 5px 0;
     text-decoration: none;
-    }
-    .social-links{
+}
+
+.social-links {
     text-align: center;
-    }   
-    .fa-facebook {
-    color:#3b5998;
-    }
-    .fa-instagram{
-      color: #8a3ab9;
-    }
-    .fa-pinterest{
+}
+
+.fa-facebook {
+    color: #3b5998;
+}
+
+.fa-instagram {
+    color: #8a3ab9;
+}
+
+.fa-pinterest {
     color: red;
-    }
+}
 
-/*Copyrights*/
-.row3{
+/*========================= Copyrights =========================--*/
+
+.row3 {
     display: flex;
-    font-family:'Apercu Regular',Tahoma,sans-serif;
-}
-.row3 p{
-    color:grey;
+    font-family: 'Apercu Regular', Tahoma, sans-serif;
 }
 
+.row3 p {
+    color: grey;
+}
 
-.footer-col #vertical-logo{
+.footer-col #vertical-logo {
     display: none;
-}
 }
