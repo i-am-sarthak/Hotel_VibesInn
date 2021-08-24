@@ -124,39 +124,76 @@ h1 {
     height: 500px;
 } */
 
+/*--========================= Responsive About Us =========================--*/
+
+@media(max-width: 1200px) {
+    .about-us div p {
+        font-size: .9rem;
+        margin: 0 100px 20px 100px;
+        line-height: 1.66;
+    }
+}
+
+@media(max-width: 767px) {
+    .about-us div h2, .rooms-title h2 {
+        font-size: 1.5rem;
+        letter-spacing: .1rem;
+    }
+    .about-us div p {
+        font-size: .9rem;
+        margin: 0 20px 20px 20px;
+        line-height: 1.66;
+    }
+}
+
+@media(max-width: 574px) {
+    .about-us div h2, .rooms-title h2 {
+        font-weight: bold;
+        font-size: 1rem;
+    }
+    .about-us div p {
+        letter-spacing: .1rem;
+        font-size: .9rem;
+        margin: 20px 10px 20px 10px;
+        line-height: 1.2;
+    }
+    .first-row-first-child {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
 /*--========================= Rooms Section Card =========================--*/
 
 .section-rooms {
     background: #efefef;
     padding: 1% 10% 5% 10%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .container-rooms-row {
     display: flex;
+    flex-wrap: wrap;
 }
 
-@media (min-width: 992px) {
-    .card-column {
-        max-width: 50%;
-    }
-}
-
-.card-img {
+.card-column .card-img {
     overflow: hidden;
+    width: 100%;
+    height: 100%;
 }
 
 .card-img:hover img {
     transform: scale(1.1);
 }
 
-.card-wrapper {
-    width: 75%;
-    padding: 0 25px;
-}
-
 .card-wrapper .card-img img {
     width: 100%;
     transition: all .5s;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
     /* height: 300px; */
 }
 
@@ -212,61 +249,7 @@ h1 {
     background-color: black;
 }
 
-/*--========================= Responsive Card =========================--*/
-
-@media(max-width: 1200px) {
-    .about-us div p {
-        font-size: .9rem;
-        margin: 0 100px 20px 100px;
-        line-height: 1.66;
-    }
-}
-
-@media(max-width: 767px) {
-    .about-us div h2, .rooms-title h2 {
-        font-size: 1.5rem;
-        letter-spacing: .1rem;
-    }
-    .about-us div p {
-        font-size: .9rem;
-        margin: 0 20px 20px 20px;
-        line-height: 1.66;
-    }
-}
-
-@media(max-width: 574px) {
-    .about-us div h2, .rooms-title h2 {
-        font-weight: bold;
-        font-size: 1rem;
-    }
-    .about-us div p {
-        letter-spacing: .1rem;
-        font-size: .9rem;
-        margin: 20px 10px 20px 10px;
-        line-height: 1.2;
-    }
-    .first-row-first-child {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-}
-
 /*--========================= Rooms Column 2 =========================--*/
-
-.card-column-media {
-    
-    align-content: center;
-    align-items: stretch;
-    justify-content: flex-start;
-    padding: 0;
-}
-
-.media-first-row {
-    width: 100%;
-    height: 50%;
-    margin: 0;
-}
 
 /* .first-row-first-child{
     position: relative;
@@ -277,14 +260,55 @@ h1 {
     display: flex;
     flex-direction: column; 
 } */
-
-.first-row-first-child .card-wrapper, .first-row-second-child .card-wrapper{
+.card-column-media {
     display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+@media (min-width: 992px) {
+    .card-column {
+        max-width: 50%;
+    }
+    .first-row-first-child .card-wrapper, .first-row-second-child .card-wrapper {
+    padding: 0 10px;
+    }
+}
+
+@media (max-width: 991px) {
+    .card-column-media {
+        width: 100%;
+    }
+    
+    .first-row-first-child .card-wrapper, .first-row-second-child .card-wrapper {
+        padding: 0 0;
+    }
+}
+
+.card-column-media .card-img {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0 5px;
+}
+
+.card-column .card-wrapper {
+    width: 100%;
+}
+.first-row-first-child {
+    padding: 0 0 5px 0;
+}
+
+.first-row-second-child {
+    padding: 5px 0 0 0;
+}
+
+.first-row-first-child .card-wrapper, .first-row-second-child .card-wrapper {
+    display: flex;
+    height: 100%;
 }
 
 @media (min-width: 992px) {}
-
-
 
 /*--========================= Facilities =========================--*/
 
@@ -305,7 +329,6 @@ h1 {
         margin-bottom: 30px;
     }
 }
-
 
 /*--========================= Footer =========================--*/
 
