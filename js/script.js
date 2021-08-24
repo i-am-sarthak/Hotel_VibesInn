@@ -17,3 +17,16 @@ function showDivs(n) {
     x[slideIndex - 1].style.display = "block";
     //setTimeout(showDivs,2000);
 }
+
+
+// LightSlider
+
+$(document).ready(function() {
+    $('#autoWidth').lightSlider({
+        autoWidth:true,
+        loop:true,
+        onSliderLoad: function() {
+            $('#autoWidth').removeClass('cS-hidden');
+        } 
+    });  
+  });

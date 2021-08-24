@@ -330,6 +330,49 @@ h1 {
     }
 }
 
+/* ====================== Box Slider ===================== */
+.section-box-slider{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.box-container{
+    width: 400px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 25px;
+}
+.slide-img{
+    height: 350px;
+    position: relative;
+}
+.slide-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.detail-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20x;
+    box-sizing: border-box;
+}
+.detail-box-text{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+
+
+
 /*--========================= Footer =========================--*/
 
 .footer {
