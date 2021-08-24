@@ -124,7 +124,6 @@ h1 {
     height: 500px;
 } */
 
-
 /*--========================= Responsive About Us =========================--*/
 
 @media(max-width: 1200px) {
@@ -167,8 +166,6 @@ h1 {
 
 /*--========================= Rooms Section Card =========================--*/
 
-
-
 .section-rooms {
     background: #efefef;
     padding: 1% 10% 5% 10%;
@@ -176,40 +173,16 @@ h1 {
     flex-wrap: wrap;
 }
 
-.container-rooms-row{
+.container-rooms-row {
     display: flex;
     flex-wrap: wrap;
 }
 
-.card-column-media{
-    display: flex;
-    flex-wrap: wrap;
-    width: 50%;
-}
-
-@media (min-width: 992px) {
-    .card-column {
-        max-width: 50%;
-    }
-}
-
-.card-column-media .card-img {
+.card-column .card-img {
     overflow: hidden;
-    width: 100%;    
-    height: 100%;
-    margin: 0 5px;
-}
-
-.card-column .card-wrapper{
     width: 100%;
-}
-
-.card-column .card-img{
-    overflow: hidden;
-    width: 100%;    
     height: 100%;
 }
-
 
 .card-img:hover img {
     transform: scale(1.1);
@@ -276,9 +249,7 @@ h1 {
     background-color: black;
 }
 
-
 /*--========================= Rooms Column 2 =========================--*/
-
 
 /* .first-row-first-child{
     position: relative;
@@ -289,23 +260,55 @@ h1 {
     display: flex;
     flex-direction: column; 
 } */
+.card-column-media {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
 
-.first-row-first-child{
+@media (min-width: 992px) {
+    .card-column {
+        max-width: 50%;
+    }
+    .first-row-first-child .card-wrapper, .first-row-second-child .card-wrapper {
+    padding: 0 10px;
+    }
+}
+
+@media (max-width: 991px) {
+    .card-column-media {
+        width: 100%;
+    }
+    
+    .first-row-first-child .card-wrapper, .first-row-second-child .card-wrapper {
+        padding: 0 0;
+    }
+}
+
+.card-column-media .card-img {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0 5px;
+}
+
+.card-column .card-wrapper {
+    width: 100%;
+}
+.first-row-first-child {
     padding: 0 0 5px 0;
 }
-.first-row-second-child{
+
+.first-row-second-child {
     padding: 5px 0 0 0;
 }
 
-.first-row-first-child .card-wrapper, .first-row-second-child .card-wrapper{
+.first-row-first-child .card-wrapper, .first-row-second-child .card-wrapper {
     display: flex;
     height: 100%;
-    padding: 0 10px;
 }
 
 @media (min-width: 992px) {}
-
-
 
 /*--========================= Facilities =========================--*/
 
