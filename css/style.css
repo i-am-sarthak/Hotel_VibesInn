@@ -77,6 +77,34 @@ h1 {
     background-color: yellow;
 }
 
+
+/*--========================= Facilities =========================--*/
+
+.section-facilities{
+    margin: 10px;
+    background-color: #efefef;
+}
+
+.fac-inner-wrapper {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+
+@media(max-width: 767px) {}
+
+@media(max-width: 574px) {
+    .fac-inner-wrapper {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .fac-inner-wrapper {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
 /*--========================= About Us =========================--*/
 
 .about-us {
@@ -310,25 +338,6 @@ h1 {
 
 @media (min-width: 992px) {}
 
-/*--========================= Facilities =========================--*/
-
-.fac-inner-wrapper {
-    display: flex;
-}
-
-@media(max-width: 767px) {}
-
-@media(max-width: 574px) {
-    .fac-inner-wrapper {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-    .fac-inner-wrapper {
-        width: 100%;
-        margin-bottom: 30px;
-    }
-}
 
 /* ====================== Box Slider ===================== */
 .section-box-slider{

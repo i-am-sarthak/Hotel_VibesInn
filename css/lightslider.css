@@ -3,6 +3,9 @@
 * Copyright (c) 2015 Sachin N; Licensed MIT */
 /** /!!! core css Should not edit !!!/**/ 
 
+
+/* Changes Made:   Line 171,  */
+
 .lSSlideOuter {
     overflow: hidden;
     -webkit-touch-callout: none;
@@ -170,11 +173,11 @@
 }
 .lSAction > .lSPrev {
     background-position: 0 0;
-    left: 10px;
+    left: -2px;
 }
 .lSAction > .lSNext {
     background-position: -32px 0;
-    right: 10px;
+    right: 30px;
 }
 .lSAction > a.disabled {
     pointer-events: none;
