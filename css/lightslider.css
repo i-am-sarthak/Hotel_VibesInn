@@ -79,7 +79,7 @@
     margin: 10px 0 0;
     padding: 0;
     text-align: center;
-	display: none;
+	/* display: none; */
 	
 }
 .lSSlideOuter .lSPager.lSpg > li {
@@ -173,7 +173,7 @@
 }
 .lSAction > .lSPrev {
     background-position: 0 0;
-    left: -2px;
+    left: 0px;
 }
 .lSAction > .lSNext {
     background-position: -32px 0;
