@@ -172,7 +172,32 @@ a.active,a:hover{
     align-items: center;
 }
 
-@media(max-width: 767px) {}
+.fac-icon-text{
+    flex-basis: 15%;
+    margin: 5px auto 5px auto;
+}
+.fac-icon-text p{
+    text-align: center;
+    margin: auto;
+}
+
+.fac-icon-text div {
+    text-align: center;
+    height: 100%;
+    margin: auto;
+}
+
+@media(max-width: 767px) {
+    .fac-inner-wrapper {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .fac-inner-wrapper {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
 
 @media(max-width: 574px) {
     .fac-inner-wrapper {
@@ -372,13 +397,13 @@ a.active,a:hover{
 .card-column-media {
     display: flex;
     flex-wrap: wrap;
-    width: 50%;
+    width: 55%;
 }
 
 @media (min-width: 992px) {
     .card-column {
         max-width: 45%;
-        padding: 0 10px;
+        /* padding: 0 10px; */
     }
     .card-column-media .card-img {
         overflow: hidden;
@@ -409,9 +434,6 @@ a.active,a:hover{
         padding: 0 0;
     }
 
-    .card-column {
-        padding: 0 10px;
-    }
     .card-column-media .card-img {
         overflow: hidden;
         width: 100%;
@@ -427,7 +449,8 @@ a.active,a:hover{
 }
 
 .card-column .card-wrapper {
-    width: 100%;
+    width: 96%;
+    margin: auto;
 }
 
 .first-row-first-child .card-wrapper, .first-row-second-child .card-wrapper {
@@ -451,7 +474,7 @@ a.active,a:hover{
 }
 
 .section-box-slider{
-    width: 100%;
+    /* width: 100%; */
     height: 100vh;
     display: flex;
     justify-content: center;
