@@ -28,6 +28,7 @@ nav {
     height: 80px;
     width: 100%;
     position: fixed;
+    z-index: 1030;
     top:0;
     left: 0;
     right: 0; 
@@ -40,9 +41,6 @@ nav {
 } */
 
 .logo-img {
-    /* float: left;
-    margin-left: 15%;*/
-    /* width: 35px; */
     height: 80px;
     line-height: 80px;
     padding: 0 10px 0 50px;
@@ -119,6 +117,7 @@ a.active, a:hover {
         display: block;
     }
     nav ul {
+        padding: 0;
         margin: 0 10px 0 0;
         position: fixed;
         width: 100%;
@@ -344,7 +343,7 @@ a.active, a:hover {
 
 .card-wrapper .card-img img {
     width: 100%;
-    transition: all .5s;
+    transition: all 0.3s ease;
     height: 100%;
     object-fit: cover;
     object-position: center center;
