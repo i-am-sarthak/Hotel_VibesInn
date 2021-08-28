@@ -17,11 +17,13 @@ h1 {
 }
 
 /*--========================= Nav Bar Styling Code =========================--*/
-nav{
+
+nav {
     background: #efefef;
     height: 80px;
     width: 100%;
 }
+
 /* .navbar{
     display: flex;
     justify-content: space-between;
@@ -31,16 +33,18 @@ nav{
 .logo-img {
     /* float: left;
     margin-left: 15%;*/
-    width: 35px;
-    height: 30px;
+    /* width: 35px; */
+    height: 80px;
     line-height: 80px;
-    padding: 0 100px;
+    padding: 0 10px 0 50px;
 }
-nav ul{
+
+nav ul {
     float: right;
-    margin-right: 20px;
+    margin: 0 20px 0 0;
 }
-nav ul li{
+
+nav ul li {
     display: inline-block;
     line-height: 80px;
     margin: 0 5px;
@@ -71,11 +75,13 @@ nav ul li a {
     padding: 7px 13px;
     border-radius: 3px;
 }
-a.active,a:hover{
+
+a.active, a:hover {
     background: white;
     transition: .5s;
 }
-.checkbtn{
+
+.checkbtn {
     font-size: 30px;
     color: #ae0000;
     float: right;
@@ -84,23 +90,27 @@ a.active,a:hover{
     cursor: pointer;
     display: none;
 }
-#check{
+
+#check {
     display: none;
 }
 
-@media (max-width: 952px){
-    .logo-img{
-        padding-left: 50px; 
+@media (max-width: 952px) {
+    .logo-img {
+        padding: 0 5px 0 40px;
+
     }
-    nav ul li a{
+    nav ul li a {
         font-size: 16px;
     }
 }
-@media (max-width: 858px){
-    .checkbtn{
+
+@media (max-width: 896px) {
+    .checkbtn {
         display: block;
     }
-    nav ul{
+    nav ul {
+        margin: 0 10px 0 0;
         position: fixed;
         width: 100%;
         height: 100vh;
@@ -110,26 +120,27 @@ a.active,a:hover{
         text-align: center;
         transition: all .5s;
     }
-    nav ul li{
+    nav ul li {
         display: block;
         margin: 50px 0;
         line-height: 30px;
     }
-    nav ul li a{
+    nav ul li a {
         font-size: 20px;
     }
-    a:hover,a.active{
+    a:hover, a.active {
         background: none;
-        color:gold;
+        color: gold;
     }
-    #check:checked ~ ul{
+    #check:checked~ul {
         left: 0;
     }
 }
 
 /*--========================= SlideShow =========================--*/
-.section-banner{
-     margin: 40px 5px; 
+
+.section-banner {
+    margin: 40px 5px;
 }
 
 .myslides {
@@ -159,9 +170,9 @@ a.active,a:hover{
     background-color: yellow;
 }
 
-
 /*--========================= Facilities =========================--*/
-.section-facilities{
+
+.section-facilities {
     margin: 10px;
     background-color: #efefef;
 }
@@ -172,11 +183,12 @@ a.active,a:hover{
     align-items: center;
 }
 
-.fac-icon-text{
+.fac-icon-text {
     flex-basis: 15%;
     margin: 5px auto 5px auto;
 }
-.fac-icon-text p{
+
+.fac-icon-text p {
     text-align: center;
     margin: auto;
 }
@@ -394,6 +406,7 @@ a.active,a:hover{
     display: flex;
     flex-direction: column; 
 } */
+
 .card-column-media {
     display: flex;
     flex-wrap: wrap;
@@ -411,10 +424,10 @@ a.active,a:hover{
         height: 100%;
         margin: 0 7.5px;
     }
-    .first-row-first-child{
+    .first-row-first-child {
         padding: 0 0 7.5px 0;
     }
-    .first-row-second-child{
+    .first-row-second-child {
         padding: 7.5px 0 0 0;
     }
 }
@@ -429,21 +442,19 @@ a.active,a:hover{
         height: 100%;
         margin: 0;
     }
-    
     .first-row-first-child .card-wrapper, .first-row-second-child .card-wrapper {
         padding: 0 0;
     }
-
     .card-column-media .card-img {
         overflow: hidden;
         width: 100%;
         height: 100%;
         margin: 0 7.5px;
     }
-    .first-row-first-child{
+    .first-row-first-child {
         padding: 15px 0 7.5px 0;
     }
-    .first-row-second-child{
+    .first-row-second-child {
         padding: 7.5px 0 15px 0;
     }
 }
@@ -460,10 +471,9 @@ a.active,a:hover{
 
 @media (min-width: 992px) {}
 
-
 /* ====================== Box Slider ===================== */
 
-.fac-title{
+.fac-title {
     font-size: 2rem;
     letter-spacing: .3125rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -473,7 +483,7 @@ a.active,a:hover{
     margin-bottom: 0px;
 }
 
-.section-box-slider{
+.section-box-slider {
     /* width: 100%; */
     height: 100vh;
     display: flex;
@@ -482,24 +492,26 @@ a.active,a:hover{
     margin-left: 15px;
 }
 
-
-.box-container{
+.box-container {
     width: 400px;
-    box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     overflow: hidden;
     margin: 25px;
 }
-.slide-img{
+
+.slide-img {
     height: 350px;
     position: relative;
 }
-.slide-img img{
+
+.slide-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.detail-box{
+
+.detail-box {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -507,15 +519,13 @@ a.active,a:hover{
     padding: 10px 20x;
     box-sizing: border-box;
 }
-.detail-box-text{
+
+.detail-box-text {
     display: flex;
     flex-direction: column;
     margin: 15px;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
 }
-
-
-
 
 /*--========================= Footer =========================--*/
 
