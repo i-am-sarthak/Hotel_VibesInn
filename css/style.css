@@ -11,7 +11,6 @@ header {
 
 body{
     margin: 0;
-    padding: 0;
 }
 
 h1 {
@@ -29,6 +28,9 @@ nav {
     height: 80px;
     width: 100%;
     position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
 }
 
 /* .navbar{
@@ -170,9 +172,9 @@ a.active, a:hover {
 }
 
 .btn-booknow {
-    padding: 15px 25px;
     text-align: center;
     cursor: pointer;
+    padding: 15px 25px;
     color: red;
     background-color: yellow;
 }
