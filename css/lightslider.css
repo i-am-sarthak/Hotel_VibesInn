@@ -179,6 +179,14 @@
     background-position: -32px 0;
     right: 30px;
 }
+@media (max-width:480px){
+    .lSAction > .lSNext {
+        right: 0px;
+    }
+}
+
+
+
 .lSAction > a.disabled {
     pointer-events: none;
 }

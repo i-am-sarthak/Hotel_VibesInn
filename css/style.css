@@ -534,6 +534,13 @@ a.active, a:hover {
     font-family: 'Times New Roman', Times, serif;
 }
 
+@media (max-width:480px){
+    .box-container {
+        width: 320px;
+        margin: 10px;
+    }
+}
+
 /*--========================= Footer =========================--*/
 
 .footer {
