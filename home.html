@@ -64,7 +64,7 @@
 
     <!--=====================SLIDESHOW===========================-->
 
-    <section class="section-banner">
+    <!-- <section class="section-banner">
         <div class="slide-display-container">
             <img class="myslides" src="Gallery/room7.jpg">
             <img class="myslides" src="Gallery/room2.jpg">
@@ -74,44 +74,105 @@
             <button class="btn-display-left" onclick="plusDivs(-1)">&#10094;</button>
             <button class="btn-display-right" onclick="plusDivs(+1)">&#10095;</button>
         </div>
+    </section> -->
+    <script src="js/script.js"></script>    
+
+
+    <section class="slideshow-section">
+        <!--image slider start-->
+    <div class="sslider">
+        <div class="sslides">
+          <!--radio buttons start-->
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+          <!--radio buttons end-->
+          <!--slide images start-->
+          <div class="sslide first">
+            <img src="Gallery/view1.jpg" alt="">
+          </div>
+          <div class="sslide">
+            <img src="Gallery/recep1.jpeg" alt="">
+          </div>
+          <div class="sslide">
+            <img src="Gallery/room7.JPG" alt="">
+          </div>
+          <div class="sslide">
+            <img src="Gallery/room2.jpg" alt="">
+          </div>
+          <!--slide images end-->
+          <!--automatic navigation start-->
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+          <!--automatic navigation end-->
+        </div>
+        <!--manual navigation start-->
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+        <!--manual navigation end-->
+      </div>
+      <!--image slider end-->
+  
+      <script type="text/javascript">
+      var counter = 1;
+      setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 4){
+          counter = 1;
+        }
+      }, 5000);
+      </script>
+  
     </section>
-    <script src="js/script.js"></script>
 
 
-    <!--=====================FACILITIES======================-->
+<!--=====================FACILITIES======================-->
 
-    <section class="section-facilities">
-        <div class="facilities-wrapper">
-            <div class="container-facilities">
-                <div class="fac-inner-wrapper">
-                    <div class="fac-title-text">
-                        <h2>BOOK DIRECT</h2>
-                    </div>
-                    <div class="custom-feature"></div>
-                    <div class="fac-icon-text">
-                        <div><img src="Gallery/book1.png"></div>
-                        <p> Best Rates Guaranteed </p>
-                    </div>
-                    <div class="fac-icon-text">
-                        <div><img src="Gallery/book2.png"></div>
-                        <p> Pay at Hotel </p>
-                    </div>
-                    <div class="fac-icon-text">
-                        <div><img src="Gallery/book3.png"></div>
-                        <p> No Hidden Charges </p>
-                    </div>
-                    <div class="fac-icon-text">
-                        <div><img style="width: 50px; height: 50px;" src="Gallery/book4.png"></div>
-                        <p> Exclusive Offers </p>
-                    </div>
-                    <div class="fac-icon-text">
-                        <div><img src="Gallery/book5.png"></div>
-                        <p> Wifi </p>
-                    </div>
+<section class="section-facilities">
+    <div class="facilities-wrapper">
+        <div class="container-facilities">
+            <div class="fac-inner-wrapper">
+                <div class="fac-title-text">
+                    <h2>BOOK DIRECT</h2>
+                </div>
+                <div class="custom-feature"></div>
+                <div class="fac-icon-text">
+                    <div><img src="Gallery/book1.png"></div>
+                    <p> Best Rates Guaranteed </p>
+                </div>
+                <div class="fac-icon-text">
+                    <div><img src="Gallery/book2.png"></div>
+                    <p> Pay at Hotel </p>
+                </div>
+                <div class="fac-icon-text">
+                    <div><img src="Gallery/book3.png"></div>
+                    <p> No Hidden Charges </p>
+                </div>
+                <div class="fac-icon-text">
+                    <div><img style="width: 50px; height: 50px;" src="Gallery/book4.png"></div>
+                    <p> Exclusive Offers </p>
+                </div>
+                <div class="fac-icon-text">
+                    <div><img src="Gallery/book5.png"></div>
+                    <p> Wifi </p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+
+    
 
 
 
