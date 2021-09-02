@@ -180,7 +180,7 @@ a.active, a:hover {
 .slideshow-section{
     margin: 0;
     padding: 0;
-    /* height: 100vh; */
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -189,7 +189,7 @@ a.active, a:hover {
 
 .sslider{
     width: 800px;
-    height: 500px;
+    height: 90vh;
     flex-basis: 100%;
     border-radius: 10px;
     overflow: hidden;
@@ -197,7 +197,7 @@ a.active, a:hover {
   
   .sslides{
     width: 500%;
-    height: 500px;
+    height: 90vh;
     display: flex;
   }
   
@@ -212,7 +212,7 @@ a.active, a:hover {
   
   .sslide img{
     width: 100%;
-    height: 500px;
+    height: 90vh;
     object-fit: cover;
   }
   
@@ -221,7 +221,7 @@ a.active, a:hover {
   .navigation-manual{
     position: absolute;
     width: 100%;
-    margin-top: -40px;
+    margin-top: -5vh;
     display: flex;
     justify-content: center;
   }
@@ -265,7 +265,7 @@ a.active, a:hover {
     display: flex;
     width: 100%;
     justify-content: center;
-    margin-top: 460px;
+    margin-top: 85vh;
   }
   
   .navigation-auto div{
