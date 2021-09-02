@@ -227,7 +227,7 @@ a.active, a:hover {
   }
   
   .manual-btn{
-    border: 2px solid #40D3DC;
+    border: 2px solid #ae0000;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -269,7 +269,7 @@ a.active, a:hover {
   }
   
   .navigation-auto div{
-    border: 2px solid #40D3DC;
+    border: 2px solid #ae0000;
     padding: 5px;
     border-radius: 10px;
     transition: 1s;
@@ -280,19 +280,19 @@ a.active, a:hover {
   }
   
   #radio1:checked ~ .navigation-auto .auto-btn1{
-    background: #40D3DC;
+    background: #ae0000;
   }
   
   #radio2:checked ~ .navigation-auto .auto-btn2{
-    background: #40D3DC;
+    background: #ae0000;
   }
   
   #radio3:checked ~ .navigation-auto .auto-btn3{
-    background: #40D3DC;
+    background: #ae0000;
   }
   
   #radio4:checked ~ .navigation-auto .auto-btn4{
-    background: #40D3DC;
+    background: #ae0000;
   }
 
 /*--========================= Facilities =========================--*/
