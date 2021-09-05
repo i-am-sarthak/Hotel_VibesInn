@@ -24,7 +24,7 @@ h1 {
 /*--========================= Nav Bar Styling Code =========================--*/
 
 nav {
-    background: #efefef;
+    background: #efefef00;
     height: 80px;
     width: 100%;
     position: fixed;
@@ -32,6 +32,8 @@ nav {
     top:0;
     left: 0;
     right: 0; 
+    padding: 20px 10px; /* Large padding which will shrink on scroll (using JS) */
+    transition: 0.4s;
 }
 
 /* .navbar{
@@ -123,7 +125,7 @@ a.active, a:hover {
         width: 100%;
         height: 100vh;
         background: #efefef;
-        top: 80px;
+        top: 100px;
         left: -110%;
         text-align: center;
         transition: all .5s;
@@ -178,7 +180,7 @@ a.active, a:hover {
     right: 1%;
 } */
 .slideshow-section{
-    margin: 0;
+    margin: -80px 0 0 0;
     padding: 0;
     height: 90vh;
     display: flex;
