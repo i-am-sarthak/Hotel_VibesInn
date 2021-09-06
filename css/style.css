@@ -842,12 +842,12 @@ a.active, a:hover {
 .aboutus-content-section{
     padding-top: 100px;
     padding-bottom: 100px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 .aboutus-content-container{
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -860,4 +860,26 @@ a.active, a:hover {
 
 .aboutus-content-img{
     height: 480px;
+    width: 450px;
 }
+.aboutus-content-row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.aboutus-content-column-first{
+    max-width: 50%;
+}
+.aboutus-content-column-second{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-left: 25px;
+}
+.aboutus-content-text{
+    font-size: 16px;
+    text-align: justify;
+    line-height: 30px;
+    font-family: serif;
+}
+
