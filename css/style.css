@@ -818,3 +818,46 @@ a.active, a:hover {
 .footer-col #vertical-logo {
     display: none;
 }
+
+
+
+/*==========================================ABOUT US HTML===============================================================*/
+
+
+/* Middle Section */
+.aboutus-logo{
+    padding: 90px 0 50px 0;
+    text-align: center;
+    background: black;
+}
+
+.aboutus-logo-img {
+    height: 80px;
+    line-height: 80px;
+    /* padding: 0 10px 0 50px; */
+}
+
+/* About Us Content */
+
+.aboutus-content-section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.aboutus-content-container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.aboutus-content-title{
+    font-size: 30px;
+    display: block;
+    text-align: center;
+}
+
+.aboutus-content-img{
+    height: 480px;
+}
