@@ -826,9 +826,15 @@ a.active, a:hover {
 
 /* Middle Section */
 .aboutus-logo{
-    padding: 90px 0 50px 0;
+    padding: 50px 0 15px 0;
     text-align: center;
     background: black;
+}
+.aboutus-logo h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: lemonchiffon;
+    letter-spacing: 5px;
 }
 
 .aboutus-logo-img {
@@ -845,6 +851,7 @@ a.active, a:hover {
     padding-right: 15px;
     padding-left: 15px;
 }
+
 
 .aboutus-content-container{
     width: 100%;
