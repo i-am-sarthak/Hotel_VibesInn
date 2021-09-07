@@ -1,7 +1,6 @@
 html {
     margin: 0;
     padding: 0;
-    
 }
 
 header {
@@ -9,7 +8,7 @@ header {
     height: 70px;
 }
 
-body{
+body {
     margin: 0;
 }
 
@@ -29,10 +28,11 @@ nav {
     width: 100%;
     position: fixed;
     z-index: 1030;
-    top:0;
+    top: 0;
     left: 0;
-    right: 0; 
-    padding: 20px 10px; /* Large padding which will shrink on scroll (using JS) */
+    right: 0;
+    padding: 20px 10px;
+    /* Large padding which will shrink on scroll (using JS) */
     transition: 0.4s;
 }
 
@@ -107,7 +107,6 @@ a.active, a:hover {
 @media (max-width: 952px) {
     .logo-img {
         padding: 0 5px 0 40px;
-
     }
     nav ul li a {
         font-size: 16px;
@@ -179,7 +178,8 @@ a.active, a:hover {
     top: 50%;
     right: 1%;
 } */
-.slideshow-section{
+
+.slideshow-section {
     margin: -80px 0 0 0;
     padding: 0;
     height: 90vh;
@@ -187,115 +187,114 @@ a.active, a:hover {
     justify-content: center;
     align-items: center;
 }
-        
 
-.sslider{
+.sslider {
     width: 800px;
     height: 90vh;
     flex-basis: 100%;
     /* border-radius: 10px; */
     overflow: hidden;
-  }
-  
-  .sslides{
+}
+
+.sslides {
     width: 500%;
     height: 90vh;
     display: flex;
-  }
-  
-  .sslides input{
+}
+
+.sslides input {
     display: none;
-  }
-  
-  .sslide{
+}
+
+.sslide {
     width: 20%;
     transition: 2s;
-  }
-  
-  .sslide img{
+}
+
+.sslide img {
     width: 100%;
     height: 90vh;
     object-fit: cover;
-  }
-  
-  /*css for manual slide navigation*/
-  
-  .navigation-manual{
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual {
     position: absolute;
     width: 100%;
     margin-top: -5vh;
     display: flex;
     justify-content: center;
-  }
-  
-  .manual-btn{
+}
+
+.manual-btn {
     border: 2px solid #ae0000;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
     transition: 1s;
-  }
-  
-  .manual-btn:not(:last-child){
+}
+
+.manual-btn:not(:last-child) {
     margin-right: 40px;
-  }
-  
-  .manual-btn:hover{
+}
+
+.manual-btn:hover {
     background: #40D3DC;
-  }
-  
-  #radio1:checked ~ .first{
+}
+
+#radio1:checked~.first {
     margin-left: 0;
-  }
-  
-  #radio2:checked ~ .first{
+}
+
+#radio2:checked~.first {
     margin-left: -20%;
-  }
-  
-  #radio3:checked ~ .first{
+}
+
+#radio3:checked~.first {
     margin-left: -40%;
-  }
-  
-  #radio4:checked ~ .first{
+}
+
+#radio4:checked~.first {
     margin-left: -60%;
-  }
-  
-  /*css for automatic navigation*/
-  
-  .navigation-auto{
+}
+
+/*css for automatic navigation*/
+
+.navigation-auto {
     position: absolute;
     display: flex;
     width: 100%;
     justify-content: center;
     margin-top: 85vh;
-  }
-  
-  .navigation-auto div{
+}
+
+.navigation-auto div {
     border: 2px solid #ae0000;
     padding: 5px;
     border-radius: 10px;
     transition: 1s;
-  }
-  
-  .navigation-auto div:not(:last-child){
+}
+
+.navigation-auto div:not(:last-child) {
     margin-right: 40px;
-  }
-  
-  #radio1:checked ~ .navigation-auto .auto-btn1{
+}
+
+#radio1:checked~.navigation-auto .auto-btn1 {
     background: #ae0000;
-  }
-  
-  #radio2:checked ~ .navigation-auto .auto-btn2{
+}
+
+#radio2:checked~.navigation-auto .auto-btn2 {
     background: #ae0000;
-  }
-  
-  #radio3:checked ~ .navigation-auto .auto-btn3{
+}
+
+#radio3:checked~.navigation-auto .auto-btn3 {
     background: #ae0000;
-  }
-  
-  #radio4:checked ~ .navigation-auto .auto-btn4{
+}
+
+#radio4:checked~.navigation-auto .auto-btn4 {
     background: #ae0000;
-  }
+}
 
 /*--========================= Facilities =========================--*/
 
@@ -356,7 +355,7 @@ a.active, a:hover {
     padding: 70px 0;
 }
 
-.about-us div h2, .rooms-title h2 , .fac-title {
+.about-us div h2, .rooms-title h2, .fac-title {
     font-size: 2rem;
     letter-spacing: .3125rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -408,7 +407,7 @@ a.active, a:hover {
 }
 
 @media(max-width: 767px) {
-    .about-us div h2, .rooms-title h2 ,.fac-title{
+    .about-us div h2, .rooms-title h2, .fac-title {
         font-size: 2rem;
         letter-spacing: .1rem;
     }
@@ -531,7 +530,7 @@ a.active, a:hover {
     padding-right: 15px;
     padding-left: 15px;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
 } */
 
 .card-column-media {
@@ -600,7 +599,7 @@ a.active, a:hover {
 
 /* ====================== Box Slider ===================== */
 
-.box-slider-section{
+.box-slider-section {
     padding: 40px 0;
 }
 
@@ -648,7 +647,7 @@ a.active, a:hover {
     font-family: 'Times New Roman', Times, serif;
 }
 
-@media (max-width:480px){
+@media (max-width:480px) {
     .box-container {
         width: 320px;
         margin: 10px;
@@ -819,18 +818,18 @@ a.active, a:hover {
     display: none;
 }
 
-
-
 /*==========================================ABOUT US HTML===============================================================*/
 
-
 /* Middle Section */
-.aboutus-logo{
-    padding: 50px 0 15px 0;
+
+.aboutus-logo {
+    padding: 120px 0 15px 0;
     text-align: center;
     background: black;
+    margin: -70px 0 0 0;
 }
-.aboutus-logo h2{
+
+.aboutus-logo h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 25px;
     color: lemonchiffon;
@@ -845,48 +844,67 @@ a.active, a:hover {
 
 /* About Us Content */
 
-.aboutus-content-section{
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-right: 15px;
-    padding-left: 15px;
+.aboutus-content-section {
+    padding: 50px 15px 100px 15px;
 }
 
-
-.aboutus-content-container{
+.aboutus-content-container {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
 }
 
-.aboutus-content-title{
+.aboutus-content-title {
     font-size: 30px;
     display: block;
     text-align: center;
 }
 
-.aboutus-content-img{
-    height: 480px;
-    width: 450px;
+.aboutus-content-img {
+    width: 80%;
+    height: 70vh;
+    object-fit: cover;
 }
-.aboutus-content-row{
+
+.aboutus-content-row {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
 }
-.aboutus-content-column-first{
-    max-width: 50%;
+
+.aboutus-content-column-first {
+    flex-basis: 45%;
+    text-align: center;
 }
-.aboutus-content-column-second{
+
+.aboutus-content-column-second {
     display: flex;
-    flex-wrap: wrap;
-    width: 50%;
-    padding-left: 25px;
+    flex-basis: 50%;
+    text-align: center;
+    padding: 10px;
 }
-.aboutus-content-text{
+
+.aboutus-content-text {
     font-size: 16px;
     text-align: justify;
     line-height: 30px;
     font-family: serif;
 }
 
+@media (max-width: 970px) {
+    .aboutus-content-img {
+        height: 480px;
+        align-items: center;
+        justify-content: center;
+        object-fit: fill;
+    }
+    .aboutus-content-row {
+        display: block;
+    }
+}
+@media (max-width: 767px) {
+    .aboutus-content-img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
