@@ -654,6 +654,30 @@ a.active, a:hover {
     }
 }
 
+
+/* ==========================CONTACT US============================ */
+.contact-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/* .contact-column-first {
+    flex: 0 0 50%;
+    max-width: 50%;
+} */
+.contact-column-first {
+    position: relative;
+    width: 100%;
+}
+.contact-column-second {
+    position: relative;
+    display:block
+}
+
+
+
+
+
 /*--========================= Footer =========================--*/
 
 .footer {
