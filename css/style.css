@@ -149,8 +149,11 @@ a.active, a:hover {
 .btn-booknow {
     text-align: center;
     cursor: pointer;
-    padding: 15px 25px;
-    color: red;
+    padding: 8px 10px;
+    font-size: 15px;
+    border-color:#AE0000;
+    border-radius: 15px;
+    color: #AE0000;
     background-color: yellow;
 }
 
@@ -317,6 +320,7 @@ a.active, a:hover {
 .fac-icon-text p {
     text-align: center;
     margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .fac-icon-text div {

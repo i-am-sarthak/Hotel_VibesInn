@@ -15,11 +15,15 @@
     <!--========FONT AWESOME=============-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <style>
+
+    </style>
     
     </head>
 
     <header>
-        <nav class="navbar" id="navbar" style="background: gray;">
+        <nav class="navbar" id="navbar" style="background: #f3f3f2;height: 90px; position: fixed; padding: 8px 10px;">
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
                 <i class="fas fa-bars"></i>
@@ -28,13 +32,13 @@
                 <img class="logo-img" id="logo-img" src="Gallery/logo.png" alt="logo">
             </label>
             <ul class="tabs" id="tabs">
-                <li><a class="active" href="home.html">Home</a></li>
-                <li><a href="#">Rooms</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a class="active" href="rooms.html">Rooms</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
                 <!-- <li><a class="btn-booknow" href="#">BOOK NOW</a></li> -->
-                <button class="btn-booknow">BOOK NOW</button>
+                <a href="booking.html"><button class="btn-booknow">BOOK NOW</button></a>
     
             </ul>
         </nav>
@@ -46,8 +50,8 @@
 
     <!-- Middle Section -->
     <section class="aboutus-middle-sec">
-        <div class="aboutus-logo">
-            <h2>OUR ROOMS</h2>
+        <div class="aboutus-logo" style="margin:0; padding: 35px 0 15px 0;">
+            <h2>Our Rooms</h2>
             <img class="aboutus-logo-img" id="aboutus-logo-img" src="Gallery/logo.png" alt="logo">
         </div>
     </section>
@@ -57,6 +61,94 @@
 
     <!-- Amenities -->
 
+    <section class="section-facilities" style="padding: 30px 20px 30px 20px;">
+        <div class="facilities-wrapper">
+            <div class="container-facilities">
+                <div class="fac-inner-wrapper">
+                    <div class="fac-title-text">
+                        <h2>Amenities</h2>
+                    </div>
+                    <div class="custom-feature"></div>
+                    <div class="fac-icon-text">
+                        <div><img src="Gallery/ac_icon.png"></div>
+                        <p> AC </p>
+                    </div>
+                    <div class="fac-icon-text">
+                        <div><img src="Gallery/book5.png"></div>
+                        <p> Free Wifi </p>
+                    </div>
+                    <div class="fac-icon-text">
+                        <div><img src="Gallery/tv_icon.png"></div>
+                        <p> TV </p>
+                    </div>
+                    <div class="fac-icon-text">
+                        <div><img src="Gallery/parking_icon.png"></div>
+                        <p> Free Parking </p>
+                    </div>
+                    <div class="fac-icon-text">
+                        <div><img style="width: 50px; height: 50px;" src="Gallery/water_icon.png"></div>
+                        <p> Mineral Water </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--===================ROOMS========================-->
+    <section class="section-rooms">
+
+        <div class="container-rooms">
+            <div class="rooms-title">
+                <h2>Our Best Rooms</h2>
+            </div>
+            <div class="container-rooms-row" style="justify-content: center;">
+                <div class="card-column">
+                    <div class="card-wrapper">
+                        <div class="card-img">
+                            <img src="Gallery/room8.JPG" , alt="Best Room">
+                        </div>
+                        <div class="card-box">
+                            <h2>Deluxe Room</h2>
+                            <div class="card-info-icons">
+                                <div class="card-info-icons-wrapper">
+                                    <span class="mbr-iconfont"><img src="Gallery/mbri-user.svg"></span>
+                                    <p class="card-icon-text"> 2 GUESTS </p>
+                                    <span><img src="Gallery/mbri-home.svg"></span>
+                                    <p class="card-icon-text"> 170 FT^2 </p>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, laborum.</p>
+                            <a href="booking.html"><button class="btn-explore">Book Now</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-column">
+                    <div class="card-wrapper">
+                        <div class="card-img">
+                            <img src="Gallery/room7.JPG" , alt="Best Room">
+                        </div>
+                        <div class="card-box">
+                            <h2>Executive Room</h2>
+                            <div class="card-info-icons">
+                                <div class="card-info-icons-wrapper">
+                                    <span class="mbr-iconfont"><img src="Gallery/mbri-user.svg"></span>
+                                    <p class="card-icon-text"> 2 GUESTS </p>
+                                    <span><img src="Gallery/mbri-home.svg"></span>
+                                    <p class="card-icon-text"> 190 FT^2 </p>
+                                    <span><img src="Gallery/mountain_icon.png"></span>
+                                    <p class="card-icon-text"> Balcony- Mussoorie View </p>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, laborum.</p>
+                            <a href="booking.html"><button class="btn-explore">Book Now</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -171,11 +263,11 @@
         
                     <div class="row2">
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Rooms</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Gallery</a></li>
-                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="rooms.html">Rooms</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="contactus.html">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>

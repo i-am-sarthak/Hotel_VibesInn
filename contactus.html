@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <title>Vibes Inn</title>
-
     <meta content="width=device-width, initial-scale=1" name="viewport" />
 
     <link rel="stylesheet" href="css/style.css">
@@ -19,7 +20,7 @@
     </head>
 
     <header>
-        <nav class="navbar" id="navbar" style="background: gray;">
+        <nav class="navbar" id="navbar" style="background: #f3f3f2;height: 90px; position: fixed;">
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
                 <i class="fas fa-bars"></i>
@@ -28,13 +29,13 @@
                 <img class="logo-img" id="logo-img" src="Gallery/logo.png" alt="logo">
             </label>
             <ul class="tabs" id="tabs">
-                <li><a class="active" href="home.html">Home</a></li>
-                <li><a href="#">Rooms</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a class="active" href="contactus.html">Contact Us</a></li>
                 <!-- <li><a class="btn-booknow" href="#">BOOK NOW</a></li> -->
-                <button class="btn-booknow">BOOK NOW</button>
+                <a href="booking.html"><button class="btn-booknow">BOOK NOW</button></a>
     
             </ul>
         </nav>
@@ -46,8 +47,8 @@
 
     <!-- Middle Section -->
     <section class="aboutus-middle-sec">
-        <div class="aboutus-logo">
-            <h2>CONTACT US</h2>
+        <div class="aboutus-logo" style="margin:0; padding: 35px 0 15px 0;">
+            <h2>Get in Touch</h2>
             <img class="aboutus-logo-img" id="aboutus-logo-img" src="Gallery/logo.png" alt="logo">
         </div>
     </section>
@@ -55,9 +56,10 @@
 
 
 
+
     <!-- Get in touch -->
-    <section>
-        <div class="contact-container">
+    <!-- <section> -->
+        <!-- <div class="contact-container">
             <div class="contact-row">
                 <div class="contact-coloumn-first">
                     <h2>Get In Touch</h2>
@@ -82,9 +84,95 @@
                     </div>
                 </div>
             </div>
+        </div> -->
+        <!-- <h2 style="margin-top:15px;text-align: center; font-family: Georgia, 'Times New Roman', Times, serif;">Get in Touch</h2> -->
+
+        <!-- <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <h2>Get in Touch</h2>
+            </div>
+        </div> -->
+
+    <!-- </section> -->
+
+    <section class="contact-us mt-sm-30 pt-0">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="card bg-light">
+                        <div class="card-body px-md-15">
+                            <div class="row">
+                                <div class="col-12 border-bottom pb-8">
+                              <p style="font-weight: 500;" class="font-sm-size-24 font-size-20 text-uppercase font-weight-bold">Address</p>
+                              <p class="font-sm-size-18 font-size-15 pr-md-25" style="color: #AE0000;">Class Tower, 65, Danda Nori wala, Sahastradhara Rd, near Him Jyoti School, Dehradun, Uttarakhand 248013</p>
+                              <p style="font-weight: 700;color: #AE0000;" class="mr-16 font-size-18 d-inline-block mt-3"><i class="lab la-telegram-plane pr-3 align-middle font-size-23"></i>vibesinngroup@gmail.com</p>
+                                  <p style="float: right;font-weight: 700;color: #AE0000;" class="font-size-18 d-inline-block mt-3"><i class="las la-phone-volume pr-3 align-middle font-size-23"></i>+91 7217599707</p>
+                                </div>
+                                <div class="col-12 signup mt-md-10">
+                                    <!-- <p class="font-sm-size-24 font-size-16 text-center text-uppercase">Fields Marked With An <super style="color: red;">*</super> Are Required</p> -->
+                                    <form id="contact-us-form" method="POST"><input type="hidden" name="csrfmiddlewaretoken" value="rxmCv3VbfpoELF1pVtUUP3KmU2d2iqy9RuP9EmJD9SG9eQgXKenHBg8GsNLb3dki">
+                                        <div class="row" style="margin-top: 20px;">
+    
+                                            <div class="col-12 col-md-6">
+                                              <div id="floatContainer1" class="float-container position-relative form-group mb-5">
+                                                    <label style="margin-left:20px;" for="exampleInputEmail1">Name</label>
+                                                    <input style="margin-left:20px;width: 250px;" size="50" type="text" name="name" class="form-control fvalidation" required id="id_name">
+                                                    <span class="text-danger error-msg"></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                              <div style="margin-right:20px;" id="floatContainer1" class="float-container position-relative form-group mb-5">
+                                                    <label for="exampleInputEmail1">Email</label>
+                                                    <input type="email" name="email" class="form-control fvalidation" required id="id_email">
+                                                    <span class="text-danger error-msg"></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-12">
+                                              <div id="floatContainer1" class="float-container position-relative form-group mb-5">
+                                                    <label style="margin-left: 20px;" for="exampleInputEmail1">Phone</label>
+                                                    <input style="width: 250px;margin-left: 20px;" size="10" type="number" name="phone" class="form-control fvalidation" required id="id_phone">
+                                                    <span class="text-danger error-msg"></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-12">
+                                              <div id="floatContainer1" class="float-container position-relative form-group mb-5 textarea">
+                                                    <label style="margin-left:20px;" for="exampleInputEmail1">Message</label>
+                                                    <input style="margin-left:20px; width: 80%;height: 150px;" type="text" name="message" class="form-control fvalidation" required id="id_message">
+                                                    <span class="text-danger error-msg"></span>
+                                                    <!-- <span class="small text-danger"></span> -->
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-12 text-center">
+                                                <div id="floatContainer1" class="float-container form-group mb-5">
+                                                    <button onclick="validateForm(this)" type="button" class="btn py-2 btn-success px-22 text-uppercase font-sm-size-20">Submit</button>
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                        <div class="g-recaptcha"
+                           data-sitekey="6LdxmMIZAAAAALGvYidvnVAQPHI0x5Jne4eHLW4W"
+                           data-callback="onSubmit"
+                           data-size="invisible">
+                      </div>
+    
+                                    </form>
+                                </div>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="card">
+                        <div class="card-body py-0 px-0">
+                            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.6281939250193!2d77.23677245119154!3d28.640903482328223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd27168ab00d%3A0x5df8084788069022!2sgoStops%20Delhi!5e0!3m2!1sen!2sin!4v1577100614899!5m2!1sen!2sin" width="600" height="450" frameborder="0" loading="lazy" allowfullscreen=""></iframe>                     -->
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3442.891002101868!2d78.07983361498026!3d30.35404748177071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3908d7023a11a78f%3A0x21999aac59a93b7b!2sOYO%2081682%20Vibes%20Inn!5e0!3m2!1sen!2sin!4v1651869548003!5m2!1sen!2sin" width="100%" height="740" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-
+    
 
 
 
@@ -199,11 +287,11 @@
         
                     <div class="row2">
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Rooms</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Gallery</a></li>
-                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="rooms.html">Rooms</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="contactus.html">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
